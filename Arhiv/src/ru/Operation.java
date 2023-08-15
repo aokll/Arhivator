@@ -1,3 +1,5 @@
+package ru;
+
 public enum Operation {
     CREATE, //создание архива
     ADD,//добавление нового файла в существующий архив,

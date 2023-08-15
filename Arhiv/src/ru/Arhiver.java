@@ -1,3 +1,7 @@
+package ru;
+
+import ru.command.ExitCommand;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
@@ -15,6 +19,7 @@ public class Arhiver {
 
         zipFileManager.createZip(path1);
 
+        new ExitCommand().execute();
 
 
     }
