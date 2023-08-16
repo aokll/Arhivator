@@ -29,5 +29,8 @@ public class CommandExecutor {
             }
         }
     }
+    /*public static void execute(Operation operation) throws Exception {
+        allKnownCommandsMap.get(operation).execute();
+    } более краткая реализация метода выше*/
     //ЗДЕСЬ МЫ РЕАЛИЗОВАЛИ ПАТТЕРН "КОМАНДА"
 }

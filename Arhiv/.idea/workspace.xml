@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(6.1)" />
+    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(6.2)">
+      <change afterPath="$PROJECT_DIR$/src/ru/exception/PathIsNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/exception/WrongZipFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/CommandExecutor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,10 +47,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/intelli JIDEA/Arhivator/Arhivator/Arhiv/src/ru"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\intelli JIDEA\Arhivator\Arhivator\Arhiv\src\ru" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru" />
     </key>
@@ -72,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692173706250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Arhiver(6.2)">
+      <created>1692173845147</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692173845147</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arhiver(6)" />
     <MESSAGE value="Arhiver(6.1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(6.1)" />
+    <MESSAGE value="Arhiver(6.2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(6.2)" />
   </component>
 </project>
