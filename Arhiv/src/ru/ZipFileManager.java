@@ -19,9 +19,9 @@ public class ZipFileManager {
         this.zipFile = zipFile;
     }
 
-    public void createZip(Path source) throws Exception {//произведен рефакторинг метода, написано еще 2 метода
-        //addNewZipEntry и copyData которые берут на себя часть логики метода createZip, что облегчает
-        //понимание кода.
+    public void createZip(Path source) throws Exception {//РїСЂРѕРёР·РІРµРґРµРЅ СЂРµС„Р°РєС‚РѕСЂРёРЅРі РјРµС‚РѕРґР°, РЅР°РїРёСЃР°РЅРѕ РµС‰Рµ 2 РјРµС‚РѕРґР°
+        //addNewZipEntry Рё copyData РєРѕС‚РѕСЂС‹Рµ Р±РµСЂСѓС‚ РЅР° СЃРµР±СЏ С‡Р°СЃС‚СЊ Р»РѕРіРёРєРё РјРµС‚РѕРґР° createZip, С‡С‚Рѕ РѕР±Р»РµРіС‡Р°РµС‚
+        //РїРѕРЅРёРјР°РЅРёРµ РєРѕРґР°.
         List<Path> fileNames = new ArrayList<>();
         if(Files.notExists(zipFile.getParent())){
             Files.createDirectories(zipFile);
