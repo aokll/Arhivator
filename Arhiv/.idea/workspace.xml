@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(7)">
-      <change afterPath="$PROJECT_DIR$/src/ru/Archiver.java" afterDir="false" />
+    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(8)">
+      <change afterPath="$PROJECT_DIR$/src/ru/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/Arhiver.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Arhiv6" />
+        <entry key="$PROJECT_DIR$/.." value="Arhiv7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -46,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/intelli JIDEA/Arhivator/Arhivator/Arhiv/src/ru"
+    "last_opened_file_path": "D:/intelli JIDEA/JavaRushTasks"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692174551588</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Arhiver(8)">
+      <created>1692191839418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692191839418</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +119,7 @@
     <MESSAGE value="Arhiver(6.1)" />
     <MESSAGE value="Arhiver(6.2)" />
     <MESSAGE value="Arhiver(7)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(7)" />
+    <MESSAGE value="Arhiver(8)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(8)" />
   </component>
 </project>
