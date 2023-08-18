@@ -13,7 +13,7 @@ public abstract class ZipCommand implements Command {
     }
 
     public ZipFileManager getZipFileManager() throws Exception {
-        System.out.println("Введите полный путь файла архива");
+        System.out.println("Р’РІРµРґРёС‚Рµ РїРѕР»РЅС‹Р№ РїСѓС‚СЊ С„Р°Р№Р»Р° Р°СЂС…РёРІР°");
         return new ZipFileManager(Paths.get(ConsoleHelper.readString())) ;
     }
 }
