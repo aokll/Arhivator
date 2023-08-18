@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(9)">
+    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(10.1)">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/ZipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/ZipFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/command/ZipCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/command/ZipCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/command/ZipCreateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/command/ZipCreateCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Arhiv8" />
+        <entry key="$PROJECT_DIR$/.." value="Arhiv9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -40,14 +43,14 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/intelli JIDEA/JavaRushTasks"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/intelli JIDEA/JavaRushTasks&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\intelli JIDEA\Arhivator\Arhivator\Arhiv\src\ru" />
@@ -107,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692259362719</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Arhiver(10)">
+      <created>1692278137346</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692278137346</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Arhiver(10.1)">
+      <created>1692278322282</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692278322282</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +145,8 @@
     <MESSAGE value="Arhiver(7)" />
     <MESSAGE value="Arhiver(8)" />
     <MESSAGE value="Arhiver(9)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(9)" />
+    <MESSAGE value="Arhiver(10)" />
+    <MESSAGE value="Arhiver(10.1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(10.1)" />
   </component>
 </project>
