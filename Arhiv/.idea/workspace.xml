@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(10.1)">
+    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(11.1)">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/ZipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/ZipFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/command/ZipCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/command/ZipCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/command/ZipCreateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/command/ZipCreateCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Arhiv9" />
+        <entry key="$PROJECT_DIR$/.." value="Arhiv10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -56,6 +53,7 @@
       <recent name="D:\intelli JIDEA\Arhivator\Arhivator\Arhiv\src\ru" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.command" />
       <recent name="ru" />
     </key>
   </component>
@@ -124,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692278322282</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Arhiver(11)">
+      <created>1692349105473</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692349105473</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Arhiver(11.1)">
+      <created>1692349349763</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692349349763</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +159,8 @@
     <MESSAGE value="Arhiver(9)" />
     <MESSAGE value="Arhiver(10)" />
     <MESSAGE value="Arhiver(10.1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(10.1)" />
+    <MESSAGE value="Arhiver(11)" />
+    <MESSAGE value="Arhiver(11.1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(11.1)" />
   </component>
 </project>
