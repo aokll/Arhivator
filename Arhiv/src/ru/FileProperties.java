@@ -1,6 +1,8 @@
 package ru;
 
-public class FileProperties {
+public class FileProperties {//который будет отвечать за свойства каждого файла в архиве.
+    //Свойства - это набор, состоящий из: имя файла, размер файла до и после сжатия, метод сжатия.
+
     private String name;
     private long size;
     private long compressedSize;

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(11.1)">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(12)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Arhiv10" />
+        <entry key="$PROJECT_DIR$/.." value="Arhiv11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -53,8 +50,8 @@
       <recent name="D:\intelli JIDEA\Arhivator\Arhivator\Arhiv\src\ru" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.command" />
       <recent name="ru" />
+      <recent name="ru.command" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -136,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692349349763</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Arhiver(12)">
+      <created>1692450606607</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692450606607</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +165,7 @@
     <MESSAGE value="Arhiver(10.1)" />
     <MESSAGE value="Arhiver(11)" />
     <MESSAGE value="Arhiver(11.1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(11.1)" />
+    <MESSAGE value="Arhiver(12)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(12)" />
   </component>
 </project>
