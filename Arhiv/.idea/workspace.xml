@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(12.1)">
+    <list default="true" id="579fc040-4a3c-439e-b48f-385bb1f2ca40" name="Changes" comment="Arhiver(13)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/ZipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/ZipFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/command/ZipContentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/command/ZipContentCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692451268852</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Arhiver(13)">
+      <created>1692531945705</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1692531945705</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +185,7 @@
     <MESSAGE value="Arhiver(11.1)" />
     <MESSAGE value="Arhiver(12)" />
     <MESSAGE value="Arhiver(12.1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(12.1)" />
+    <MESSAGE value="Arhiver(13)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arhiver(13)" />
   </component>
 </project>

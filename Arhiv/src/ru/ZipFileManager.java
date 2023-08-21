@@ -1,7 +1,7 @@
 package ru;
 
-import com.javarush.task.task31.task3110.exception.PathIsNotFoundException;
-import com.javarush.task.task31.task3110.exception.WrongZipFileException;
+import ru.exception.PathIsNotFoundException;
+import ru.exception.WrongZipFileException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
