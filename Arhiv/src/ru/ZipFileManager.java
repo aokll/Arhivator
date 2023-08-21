@@ -22,35 +22,38 @@ public class ZipFileManager {
         this.zipFile = zipFile;
     }
 
-   public List<FileProperties> getFilesList() throws Exception{//Он будет возвращать список файлов
-        // в архиве, вернее список свойств этих файлов
-        List<FileProperties> list = new ArrayList<>();
-        //Внутри метода проверь является ли содержимое zipFile обычным файлом
-       // с помощью подходящего метода класса Files. Если это не файл, брось
-       // исключение WrongZipFileException()
-        if (!Files.isRegularFile(zipFile)){
+    public void extractAll(Path outputFolder) throws Exception{
+        //Проверяем существует ли архив.
+        if (!Files.isRegularFile(zipFile)) {
             throw new WrongZipFileException();
         }
-        //Создай входящий поток ZipInputStream, для файла из переменной zipFile
+        //Проверка на существование директории outputFolder, если директория  не существует, то ее нужно создать.
+        if (Files.notExists(outputFolder)){
+            Files.createDirectories(outputFolder);
+        }
+        //Создаем входной zip-поток
         try (ZipInputStream zipInputStream = new ZipInputStream(Files.newInputStream(zipFile)))
         {
-            //Пройдись по всем элементам ZipEntry потока ZipInputStream
+
             ZipEntry zipEntry;
-            while ((zipEntry=zipInputStream.getNextEntry())!=null){
-                //Для каждого элемента ZipEntry вычитай его содержимое, иначе у нас
-                // не будет информации о его размере.
-                //Нельзя узнать размер файла в архиве, не вычитав его.
-                // Это очень легко сделать с помощью функции copyData, используя
-                // временный буфер типа ByteArrayOutputStream.
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                copyData(zipInputStream,baos);
-                //Получи имя, размер, сжатый размер и метод сжатия элемента архива.
-                // Посмотри, что еще можно узнать о нем.
-                FileProperties fileProperties = new FileProperties(zipEntry.getName(), zipEntry.getSize(), zipEntry.getCompressedSize(), zipEntry.getMethod());
-                list.add(fileProperties);
-            }
+            //пока следующий полученный обьект zipEntry(Чтобы несколько файлов, сжимаемые в один архив,
+            // не слиплись вместе, для каждого из них создается специальная сущность - элемент архива ZipEntry.)
+            //т.е. из входного потока мы читаем обьекты ZipEntry, затем извлекаем из него path
+                while ((zipEntry = zipInputStream.getNextEntry()) != null){
+                        Path path = outputFolder.resolve(zipEntry.getName());
+            //проверка файла на несуществование, если true то файл создается по указанной директории
+                        if (Files.notExists(path.getParent())){
+                            Files.createDirectories(path.getParent());
+                        }
+            //читиаем данные из архива и записываем в папку
+                    try (OutputStream outputStream = Files.newOutputStream(path))
+                    {
+                        copyData(zipInputStream,outputStream);
+                    }
+                    }
+
         }
-        return list;
+
     }
 
     public void createZip(Path source) throws Exception {
@@ -60,7 +63,7 @@ public class ZipFileManager {
         if (Files.notExists(zipDirectory))
             Files.createDirectories(zipDirectory);
 
-        // Создаем zip поток
+        // Создаем выходной zip поток
         try (ZipOutputStream zipOutputStream = new ZipOutputStream(Files.newOutputStream(zipFile))) {
 
             if (Files.isDirectory(source)) {
@@ -84,6 +87,32 @@ public class ZipFileManager {
         }
     }
 
+    public List<FileProperties> getFilesList() throws Exception {
+        // Проверяем существует ли zip файл
+        if (!Files.isRegularFile(zipFile)) {
+            throw new WrongZipFileException();
+        }
+
+        List<FileProperties> files = new ArrayList<>();
+
+        try (ZipInputStream zipInputStream = new ZipInputStream(Files.newInputStream(zipFile))) {
+            ZipEntry zipEntry = zipInputStream.getNextEntry();
+
+            while (zipEntry != null) {
+                // Поля "размер" и "сжатый размер" не известны, пока элемент не будет прочитан
+                // Давайте вычитаем его в какой-то выходной поток
+                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                copyData(zipInputStream, baos);
+
+                FileProperties file = new FileProperties(zipEntry.getName(), zipEntry.getSize(), zipEntry.getCompressedSize(), zipEntry.getMethod());
+                files.add(file);
+                zipEntry = zipInputStream.getNextEntry();
+            }
+        }
+
+        return files;
+    }
+
     private void addNewZipEntry(ZipOutputStream zipOutputStream, Path filePath, Path fileName) throws Exception {
         Path fullPath = filePath.resolve(fileName);
         try (InputStream inputStream = Files.newInputStream(fullPath)) {
@@ -96,8 +125,7 @@ public class ZipFileManager {
             zipOutputStream.closeEntry();
         }
     }
-
-    private void copyData(InputStream in, OutputStream out) throws Exception {
+    private void copyData(InputStream in, OutputStream out) throws Exception {//Читает данные из in и записывать в out
         byte[] buffer = new byte[8 * 1024];
         int len;
         while ((len = in.read(buffer)) > 0) {
